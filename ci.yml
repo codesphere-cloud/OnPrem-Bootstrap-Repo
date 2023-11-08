@@ -1,2 +1,2 @@
-rm -rf *
+rm -rf .git
 git clone $GITLAB_URL .
