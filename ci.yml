@@ -1,3 +1,11 @@
-rm -rf *
-git clone $GITLAB_URL .
+prepare: 
+  steps: []
+build: 
+  steps: []
+run: 
+  steps:
+    - name: rm
+      command: rm -rf *
+    - name: clone
+      command: git clone $GITLAB_URL .
 
