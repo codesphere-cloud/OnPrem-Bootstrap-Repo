@@ -5,7 +5,7 @@ build:
 run: 
   steps:
     - name: rm
-      command: echo test
+      command: rm -rf *
     - name: clone
-      command: echo test
+      command: git clone $GITLAB_URL
 
