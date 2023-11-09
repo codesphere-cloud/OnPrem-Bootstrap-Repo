@@ -1,11 +1,11 @@
 prepare: 
   steps: []
-build: 
+test: 
   steps: []
 run: 
   steps:
     - name: rm
-      command: 'rm -rf *'
+      command: rm -rf *
     - name: clone
-      command: 'git clone $GITLAB_URL'
+      command: git clone $GITLAB_URL
 
