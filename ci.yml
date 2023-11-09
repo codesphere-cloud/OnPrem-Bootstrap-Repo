@@ -14,8 +14,6 @@ run:
       command: shopt -s dotglob
     - name: move tmp_dir content
       command: mv temp_dir/* .
-    - name: disable moving dot-files
-      command: shopt -u dotglob
     - name: remove temp_dir 
       command: rm -r temp_dir
 
