@@ -10,10 +10,8 @@ run:
       command: rm -rf *
     - name: clone
       command: git clone $GITLAB_URL temp_dir
-    - name: enable moving dot-files
-      command: shopt -s dotglob
     - name: move tmp_dir content
-      command: mv temp_dir/* .
+      command: shopt -s dotglob && mv temp_dir/* . && shopt -u dotglob
     - name: remove temp_dir 
       command: rm -r temp_dir
 
