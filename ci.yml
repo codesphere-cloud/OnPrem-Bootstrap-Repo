@@ -9,5 +9,5 @@ run:
     - name: rm 
       command: rm -rf *
     - name: clone
-      command: git clone $GITLAB_URL
+      command: git clone $GITLAB_URL .
 
