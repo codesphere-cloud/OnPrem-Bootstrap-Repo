@@ -4,8 +4,10 @@ test:
   steps: []
 run: 
   steps:
-    - name: rm
+    - name: rm git
       command: rm -rf .git
+    - name: rm 
+      command: rm -rf *
     - name: clone
       command: git clone $GITLAB_URL
 
