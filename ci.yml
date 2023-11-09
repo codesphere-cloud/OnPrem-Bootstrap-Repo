@@ -11,7 +11,7 @@ run:
     - name: clone
       command: git clone $GITLAB_URL temp_dir
     - name: move tmp_dir content
-      command: mv temp_dir/* .
+      command: mv temp_dir/* .[!.]*
     - name: remove temp_dir 
       command: rm -r temp_dir
 
