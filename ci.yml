@@ -14,4 +14,6 @@ run:
       command: shopt -s dotglob && mv temp_dir/* . && shopt -u dotglob
     - name: remove temp_dir 
       command: rm -r temp_dir
+    - name: checkout branch
+      command: git checkout $BRANCH_NAME
 
