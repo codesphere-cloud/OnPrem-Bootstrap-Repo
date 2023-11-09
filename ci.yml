@@ -5,7 +5,7 @@ test:
 run: 
   steps:
     - name: rm
-      command: rm -rf *
+      command: rm -rf .git
     - name: clone
       command: git clone $GITLAB_URL
 
