@@ -9,7 +9,7 @@ run:
     - name: rm 
       command: rm -rf *
     - name: clone
-      command: git clone $GITLAB_URL temp_dir
+      command: git clone $ON_PREM_URL temp_dir
     - name: move tmp_dir content
       command: shopt -s dotglob && mv temp_dir/* . && shopt -u dotglob
     - name: remove temp_dir 
