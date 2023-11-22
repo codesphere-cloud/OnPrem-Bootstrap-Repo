@@ -1,8 +1,4 @@
 prepare: 
-  steps: []
-test: 
-  steps: []
-run: 
   steps:
     - name: rm git
       command: rm -rf .git
@@ -16,4 +12,7 @@ run:
       command: rm -r temp_dir
     - name: checkout branch
       command: git checkout $BRANCH_NAME
-
+test: 
+  steps: []
+run: 
+  steps: []
